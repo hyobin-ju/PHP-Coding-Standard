@@ -48,7 +48,7 @@
 
 ## PHP
 
-[🔝 목차로 돌아가기](#contents)
+[🔝 목차로 돌아가기](#목차)
 ### **기본 코딩 표준 PSR-1(Basic Coding Standard)**
 #### 파일은 태그 <?php와 <?=태그만 사용해야 합니다. (필수)
  * PHP 코드는 긴 태그인 <?php ?> 와 짧은 에코 태그인 <?= ?> 를 사용하고 그 외의 변형 태그는 사용하지 않습니다.
@@ -141,7 +141,7 @@ class UserController
 ```
  
 
-[🔝 목차로 돌아가기](#contents)
+[🔝 목차로 돌아가기](#목차)
 ### **코딩 스타일 가이드 PSR-2(Coding Style Guide)**
 #### 코드는 반드시 "코딩 스타일 가이드"인 PSR [ PSR-1 ]을 따라야합니다.
 #### 파일(Files)
@@ -440,7 +440,7 @@ if ($expr1) {
 }
 ```
 
-[🔝 목차로 돌아가기](#contents)
+[🔝 목차로 돌아가기](#목차)
 ### **오토로더 PSR-4(Autoloader)**
 #### Basics
 이 PSR은 파일 경로에서 클래스를 자동로드하기위한 스펙을 설명합니다. 이 제품은 완벽하게 상호 운영이 가능하며 PSR-0을 포함한 다른 자동 로딩 사양과 함께 사용할 수 있습니다. 또한이 PSR은 사양에 따라 자동로드되는 파일을 저장할 위치를 설명합니다.
@@ -461,7 +461,7 @@ if ($expr1) {
 
 ## Laravel
 
-[🔝 목차로 돌아가기](#contents)
+[🔝 목차로 돌아가기](#목차)
 ### **단일 책임 원칙**
 
 클래스와 메서드는 하나의 책임만 있어야 합니다.
@@ -505,7 +505,7 @@ public function getFullNameShort()
 
 
 
-[🔝 목차로 돌아가기](#contents)
+[🔝 목차로 돌아가기](#목차)
 
 ### **모델은 무겁게, 컨트롤러는 가볍게**
 
@@ -547,7 +547,7 @@ class Client extends Model
 }
 ```
 
-[🔝 목차로 돌아가기](#contents)
+[🔝 목차로 돌아가기](#목차)
 
 ### **Validation-유효성 검사**
 
@@ -589,7 +589,7 @@ class PostRequest extends Request
 }
 ```
 
-[🔝 목차로 돌아가기](#contents)
+[🔝 목차로 돌아가기](#목차)
 
 ### **비즈니스 로직은 서비스 클래스에 있어야 합니다.**
 
@@ -630,7 +630,7 @@ class ArticleService
 }
 ```
 
-[🔝 목차로 돌아가기](#contents)
+[🔝 목차로 돌아가기](#목차)
 
 ### **중복 배제(Don't repeat yourself)**
 
@@ -673,7 +673,7 @@ public function getArticles()
 }
 ```
 
-[🔝 목차로 돌아가기](#contents)
+[🔝 목차로 돌아가기](#목차)
 
 ### **Query Builder, raw SQL 쿼리보다 Eloquent를 사용하는 것이 좋습니다.**
 
@@ -703,7 +703,7 @@ ORDER BY `created_at` DESC
 Article::has('user.profile')->verified()->latest()->get();
 ```
 
-[🔝 목차로 돌아가기](#contents)
+[🔝 목차로 돌아가기](#목차)
 
 ### **Mass assignment-대량 할당**
 
@@ -725,7 +725,7 @@ $article->save();
 $category->article()->create($request->all());
 ```
 
-[🔝 목차로 돌아가기](#contents)
+[🔝 목차로 돌아가기](#목차)
 
 ### **블레이드 템플릿에서 쿼리를 실행하지 않습니다. 그리고 즉시 로딩을 사용합니다.(N + 1 문제)**
 
@@ -749,7 +749,7 @@ $users = User::with('profile')->get();
 @endforeach
 ```
 
-[🔝 목차로 돌아가기](#contents)
+[🔝 목차로 돌아가기](#목차)
 
 ### **코드에 주석을 작성합니다. 하지만 주석보다 의미있는 메서드 이름과 변수 이름을 사용하는 것이 더 좋습니다.**
 
@@ -772,7 +772,7 @@ if (count((array) $builder->getQuery()->joins) > 0)
 if ($this->hasJoins())
 ```
 
-[🔝 목차로 돌아가기](#contents)
+[🔝 목차로 돌아가기](#목차)
 
 ### **블레이드 템플릿에 JS와 CSS를 작성하지 않고 PHP 클래스에 HTML을 작성하지 않습니다.**
 
@@ -800,7 +800,7 @@ let article = $('#article').val();
 
 The best way is to use specialized PHP to JS package to transfer the data.
 
-[🔝 목차로 돌아가기](#contents)
+[🔝 목차로 돌아가기](#목차)
 
 ### **코드에 텍스트로 작성하지 않고, 설정 파일, 언어 파일, 상수 등을 사용합니다.**
 
@@ -826,7 +826,7 @@ public function isNormal()
 return back()->with('message', __('app.article_added'));
 ```
 
-[🔝 목차로 돌아가기](#contents)
+[🔝 목차로 돌아가기](#목차)
 
 ### **라라벨 커뮤니티에서 수용하는 표준 라라벨 도구를 사용합니다.**
 
@@ -854,7 +854,7 @@ Generating testing data | Seeder classes, Model Factories, Faker | Creating test
 Task scheduling | Laravel Task Scheduler | Scripts and 3rd party packages
 DB | MySQL, PostgreSQL, SQLite, SQL Server | MongoDB
 
-[🔝 목차로 돌아가기](#contents)
+[🔝 목차로 돌아가기](#목차)
 
 ### **라라벨 네이밍 규칙을 따릅니다.**
 
@@ -889,7 +889,7 @@ Config | snake_case | google_calendar.php | ~~googleCalendar.php, google-calenda
 Contract (interface) | adjective or noun | Authenticatable | ~~AuthenticationInterface, IAuthentication~~
 Trait | adjective | Notifiable | ~~NotificationTrait~~
 
-[🔝 목차로 돌아가기](#contents)
+[🔝 목차로 돌아가기](#목차)
 
 ### **될 수 있으면 짧고 읽기 쉬운 문법을 사용합니다.**
 
@@ -928,7 +928,7 @@ Common syntax | Shorter and more readable syntax
 `->select('id', 'name')->get()` | `->get(['id', 'name'])`
 `->first()->name` | `->value('name')`
 
-[🔝 목차로 돌아가기](#contents)
+[🔝 목차로 돌아가기](#목차)
 
 ### **new Class 대신 IoC 컨테이너 또는 파사드를 사용합니다.**
 
@@ -954,7 +954,7 @@ public function __construct(User $user)
 $this->user->create($request->all());
 ```
 
-[🔝 목차로 돌아가기](#contents)
+[🔝 목차로 돌아가기](#목차)
 
 ### **`.env` 파일에서 직접 데이터를 가져오지 않습니다.**
 
@@ -976,7 +976,7 @@ $apiKey = env('API_KEY');
 $apiKey = config('api.key');
 ```
 
-[🔝 목차로 돌아가기](#contents)
+[🔝 목차로 돌아가기](#목차)
 
 ### **날짜를 표준 형식으로 저장합니다. accessors(get), mutators(set)을 사용해 날짜 형식을 수정합니다.**
 
@@ -1002,7 +1002,7 @@ public function getSomeDateAttribute($date)
 {{ $object->ordered_at->some_date }}
 ```
 
-[🔝 목차로 돌아가기](#contents)
+[🔝 목차로 돌아가기](#목차)
 
 ### **또 다른 좋은 사례**
 
@@ -1010,4 +1010,4 @@ public function getSomeDateAttribute($date)
 
 블레이드 템플릿에 바닐라 PHP의 사용을 최소화합니다.
 
-[🔝 목차로 돌아가기](#contents)
+[🔝 목차로 돌아가기](#목차)
